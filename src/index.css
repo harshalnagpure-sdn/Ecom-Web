@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+#root {
+  font-family: "Goldman", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Goldman", sans-serif;
+}
+
+/* Background images are now handled via inline styles in components for proper Vite asset handling */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+/* Welcome screen background is now handled via inline styles in WelcomeScreen component for proper Vite asset handling */
+
+button{
+  cursor: pointer;
+}

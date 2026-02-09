@@ -1,0 +1,386 @@
+/* Override react-country-state-city default styles to match our design */
+
+.country-state-city-container {
+  position: relative;
+  width: 100%;
+}
+
+.country-state-city-container .stdropdown-container {
+  position: relative;
+  width: 100%;
+}
+
+.country-state-city-container .stdropdown-input {
+  width: 100%;
+  background: white;
+  padding: 12px 9px;
+  /* border-radius: 9999px; */
+  border: 1px solid #E5E7EB;
+  font-size: 14px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  min-height: 48px;
+}
+
+.country-state-city-container .stdropdown-input:hover {
+  border-color: #D1D5DB;
+}
+
+.country-state-city-container .stdropdown-input.stsearch-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country-state-city-container .stdropdown-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 0;
+  font-size: 14px;
+  color: #111827;
+  cursor: pointer;
+}
+
+.country-state-city-container .stdropdown-input input::placeholder {
+  color: #9CA3AF;
+}
+
+.country-state-city-container .stdropdown-input:focus-within {
+  outline: none;
+  border-color: #374151;
+  box-shadow: 0 0 0 1px #374151;
+}
+
+.country-state-city-container.error .stdropdown-input {
+  border-color: #EF4444;
+}
+
+.country-state-city-container.error .stdropdown-input:focus-within {
+  border-color: #EF4444;
+  box-shadow: 0 0 0 1px #EF4444;
+}
+
+.country-state-city-container .stdropdown-tools {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.country-state-city-container .stdropdown-tool {
+  display: flex;
+  align-items: center;
+}
+
+.country-state-city-container .stdropdown-tool svg {
+  width: 18px;
+  height: 18px;
+  color: #374151;
+}
+
+.country-state-city-container .stdropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  margin-top: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 50;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.country-state-city-container .stdropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.country-state-city-container .stdropdown-menu::-webkit-scrollbar-track {
+  background: #F9FAFB;
+  border-radius: 12px;
+}
+
+.country-state-city-container .stdropdown-menu::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 12px;
+}
+
+.country-state-city-container .stdropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+.country-state-city-container .stdropdown-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  font-size: 14px;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.country-state-city-container .stdropdown-item:hover {
+  background-color: #F4F4F5;
+}
+
+.country-state-city-container .stdropdown-item.selected {
+  background-color: #E5E7EB;
+  font-weight: 500;
+}
+
+.country-state-city-container .stdropdown-flag {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+/* Ensure the container doesn't break layout */
+.country-state-city-container > div {
+  width: 100%;
+}
+
+/* PhoneInput styling to match checkout design */
+.phone-input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.checkout-phone-input {
+  width: 100%;
+}
+
+.checkout-phone-input .PhoneInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.checkout-phone-input .PhoneInputInput {
+  width: 100%;
+  background: white;
+  padding: 12px 20px 12px 60px;
+  border-radius: 9999px;
+  border: 1px solid #E5E7EB;
+  font-size: 14px;
+  transition: all 0.2s;
+  outline: none;
+  color: #111827;
+  min-height: 48px;
+}
+
+.checkout-phone-input .PhoneInputInput::placeholder {
+  color: #9CA3AF;
+}
+
+.checkout-phone-input .PhoneInputInput:focus {
+  border-color: #DDAE8C;
+  box-shadow: 0 0 0 3px rgba(221, 174, 140, 0.1);
+  outline: none;
+}
+
+.phone-input-wrapper.error .checkout-phone-input .PhoneInputInput {
+  border-color: #EF4444;
+}
+
+.phone-input-wrapper.error .checkout-phone-input .PhoneInputInput:focus {
+  border-color: #EF4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+  outline: none;
+}
+
+.checkout-phone-input .PhoneInputCountry {
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  height: 100%;
+}
+
+.checkout-phone-input .PhoneInputCountryIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-phone-input .PhoneInputCountrySelect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.checkout-phone-input .PhoneInputCountrySelectArrow {
+  display: none;
+}
+
+/* Remove default PhoneInput focus styling */
+.checkout-phone-input .PhoneInputInput:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(221, 174, 140, 0.1) !important;
+}
+
+/* Animated Checkout Button Styles */
+.checkout-animated-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 20px 16px 15px;
+  height: 56px;
+  position: relative;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 500;
+  background: linear-gradient(90deg, #2B2B2B 0%, #DDAE8C 100%);
+  color: white;
+  cursor: pointer;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  -webkit-tap-highlight-color: transparent;
+  transition: box-shadow 0.2s ease, opacity 150ms ease;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.checkout-animated-btn:focus {
+  box-shadow: 0 8px 64px 16px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.checkout-animated-btn:hover:not(:disabled),
+.checkout-animated-btn:active:not(:disabled) {
+  opacity: 0.9;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.checkout-animated-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#cart-icon {
+  margin-right: 0;
+  transform-origin: 20% 100%;
+  opacity: 1;
+  flex-shrink: 0;
+}
+
+#check-icon {
+  position: absolute;
+  left: calc(50% - 12px);
+  opacity: 0;
+}
+
+#check-icon path {
+  stroke-dasharray: 26px;
+  stroke-dashoffset: 26px;
+}
+
+.checkout-animated-btn span {
+  transition: opacity 0.15s ease;
+}
+
+/* Animations */
+@keyframes slide-up-fade {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in-fade {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-out {
+  0% {
+    transform: translate(0) rotate(0);
+  }
+  20% {
+    transform: translate(0) rotate(-70deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(140px) rotate(-47deg);
+    opacity: 0;
+  }
+}
+
+@keyframes checkmark {
+  from {
+    stroke-dashoffset: 26px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Animation states - Initial animation (cart roll-out, text fade) */
+.checkout-animated-btn.checked-out span {
+  animation: slide-up-fade 150ms 1;
+  animation-fill-mode: both;
+}
+
+.checkout-animated-btn.checked-out #cart-icon {
+  animation: roll-out 1s 1 150ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+/* Checkmark animation - Only when showCheckmark is true */
+.checkout-animated-btn.checked-out #check-icon {
+  opacity: 0;
+}
+
+.checkout-animated-btn.checked-out.show-checkmark #check-icon {
+  opacity: 1;
+  animation: slide-in-fade 300ms 1;
+  animation-fill-mode: both;
+}
+
+.checkout-animated-btn.checked-out.show-checkmark #check-icon path {
+  animation: checkmark 150ms 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.checkout-animated-btn.checked-out.show-checkmark {
+  background: #20bf6b;
+  transition-delay: 0ms;
+}
